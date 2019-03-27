@@ -1,5 +1,5 @@
 def consolidate_cart(cart)
-  cart.each_object({}) |(key, h), result|
+  cart.each_object({}) do |item, result|
     if h.each ||
 end
 
