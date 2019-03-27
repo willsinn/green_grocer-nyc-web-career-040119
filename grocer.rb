@@ -3,6 +3,8 @@ def consolidate_cart(cart)
     item.each do |type, attributes|
       if result[type]
         attributes[:count]+=1
+      else
+        attributes[:count]=0
 end
 
 def apply_coupons(cart, coupons)
