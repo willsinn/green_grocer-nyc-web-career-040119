@@ -1,5 +1,5 @@
 def consolidate_cart(cart)
-  cart.each
+  cart.each_object
 end
 
 def apply_coupons(cart, coupons)
