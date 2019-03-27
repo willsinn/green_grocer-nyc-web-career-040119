@@ -11,7 +11,7 @@ def consolidate_cart(cart)
   end
 end
 
-def apply_coupons(cart, coupons)
+def apply_coupons(cart: [], coupons: [])
   couponed_items= {}
   coupons.each do |coupon_hash|
     cart.each do |name, item_hash|
