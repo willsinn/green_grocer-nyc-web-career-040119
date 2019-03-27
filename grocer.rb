@@ -2,6 +2,7 @@ def consolidate_cart(cart)
   cart.each_with_object({}) do |item, result|
     item.each do |type, attributes|
       if result[type]
+        attributes[:count]
 end
 
 def apply_coupons(cart, coupons)
