@@ -5,6 +5,7 @@ def consolidate_cart(cart)
         attributes[:count]+=1
       else
         attributes[:count]=1
+        result[types]=attributes
 end
 
 def apply_coupons(cart, coupons)
